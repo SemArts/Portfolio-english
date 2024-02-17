@@ -23,7 +23,7 @@ burgerMenu.addEventListener('click', function(event) {
 const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
     const buttonElems = document.querySelectorAll(btnOpen);
     const modalElem = document.querySelector(modal);
-  
+    const body = document.querySelector('body');
     modalElem.style.cssText = `
       display: flex;
       visibility: hidden;
@@ -45,7 +45,9 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
         setTimeout(() => {
           modalElem.style.visibility = 'hidden';
         }, time);
-  
+
+        body.classList.remove('modal-open');
+
         window.removeEventListener('keydown', closeModal);
       }
     }
@@ -53,6 +55,7 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
     const openModal = () => {
       modalElem.style.visibility = 'visible';
       modalElem.style.opacity = 1;
+      body.classList.add('modal-open');
       window.addEventListener('keydown', closeModal)
     };
   

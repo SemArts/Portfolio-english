@@ -368,6 +368,9 @@ span {
   top: 5px;
   right: 15px;
 }
+.modal-open {
+  overflow-y: hidden;
+}
 
 /* About me section */
 .about-me {
