@@ -326,7 +326,43 @@ span {
   padding: 5px 0 20px 0;
   font-size: 19px;
 }
+/* modal section  */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  cursor: pointer;
+  margin: 4%;
+}
 
+.modal-main{
+  position: relative;
+  max-width: 600px;
+  margin:  auto;
+  background-color: #e3d1b9;
+  border-radius: 16px;
+  padding: 30px;
+  cursor: default;
+  height: fit-content;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+}
+
+.modal-container{ 
+  display: flex;
+  justify-content: space-between;
+}
+.modal-close{
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+   right: 15px;
+}
 /* About me section */
 .about-me {
   padding-top: 80px;
