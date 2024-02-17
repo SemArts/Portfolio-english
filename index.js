@@ -61,6 +61,7 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
     });
   
     modalElem.addEventListener('click', closeModal);
+
   };
   
   modalController({
