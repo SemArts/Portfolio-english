@@ -589,7 +589,9 @@ span {
     display: flex;
     justify-content: space-around;
   }
-
+  .price-header-text p {
+    padding-top: 10px;
+  }
   /* footer section  */
   .footer-text{
     padding: 30px 20px;
@@ -607,10 +609,11 @@ span {
   }
   p {
     font-size: 22px;
+    
   }
   li {
     font-size: 18px;
-    line-height: 1.;
+    
   }
 
   .header {
@@ -652,6 +655,10 @@ span {
   .about-me{
     gap:50px;
     align-items: center;
+  }
+
+  .speaking-club-text ul li{
+    line-height: 1.4;
   }
 
   .advantages-items {
